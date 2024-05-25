@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 
 namespace MVVMNavigation.Interfaces
 {
-	public interface INavigation : CommandResolver.Interfaces.INavigation
-	{
+	public interface INavigation : Dotnet.Commands.INavigation
+    {
         Task<IViewModel> Back();
         Task<IViewModel> Back(bool animated, bool forceReloadData = false);
         Task<TViewModel> BackTo<TViewModel>() where TViewModel : IViewModel;

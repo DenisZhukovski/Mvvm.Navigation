@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using CommandResolver.Interfaces;
+using Dotnet.Commands;
 using MVVM.Navigation;
 using MVVMNavigation.Interfaces;
 using INavigation = MVVMNavigation.Interfaces.INavigation;
@@ -11,13 +11,12 @@ namespace MVVMNavigation.ViewModels
 	{
 		protected INavigation Navigation { get; }
 
-		protected readonly ICommandResolver CommandResolver;
+		protected readonly ICommands Commands;
 
 		#region IHaveBackButton members
 
 		bool IHaveBackButton.Back()
 		{
-			CommandResolver.ForceRelease();
 			return OnHandleBack();
 		}
 
@@ -68,9 +67,9 @@ namespace MVVMNavigation.ViewModels
 
         #endregion
 
-        protected ViewModel(ICommandResolver commandResolver, INavigation navigation)
+        protected ViewModel(ICommands commands, INavigation navigation)
 		{
-			CommandResolver = commandResolver;
+            Commands = commands.Cached();
 			Navigation = navigation;
 		}
 

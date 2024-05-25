@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandResolver", "CommandResolver\CommandResolver.csproj", "{64F578B1-B0E7-4087-988F-04F041C78DD5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM.Navigation", "MVVMNavigation\MVVM.Navigation.csproj", "{7C2DE667-60E5-48DF-B3A5-A9AA48725200}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM.Navigation.Xamarin.Forms", "MVVM.Navigation.Xamarin.Forms\MVVM.Navigation.Xamarin.Forms.csproj", "{179685C0-6933-4FF8-93DE-087D45E72EF2}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64F578B1-B0E7-4087-988F-04F041C78DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64F578B1-B0E7-4087-988F-04F041C78DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64F578B1-B0E7-4087-988F-04F041C78DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64F578B1-B0E7-4087-988F-04F041C78DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C2DE667-60E5-48DF-B3A5-A9AA48725200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C2DE667-60E5-48DF-B3A5-A9AA48725200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C2DE667-60E5-48DF-B3A5-A9AA48725200}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,4 +1,4 @@
-﻿using CommandResolver.Interfaces;
+﻿using Dotnet.Commands;
 using MVVMNavigation.Interfaces;
 using INavigation = MVVMNavigation.Interfaces.INavigation;
 
@@ -19,8 +19,8 @@ namespace MVVMNavigation.ViewModels
 
 		public string Icon { get; set; }
 
-		protected SideMenuViewModel(INavigation navigation, ICommandResolver commandResolver) 
-			: base(commandResolver, navigation)
+		protected SideMenuViewModel(INavigation navigation, ICommands commands) 
+			: base(commands, navigation)
 		{
 		}
 	}

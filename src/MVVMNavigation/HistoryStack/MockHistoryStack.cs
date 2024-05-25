@@ -6,7 +6,7 @@ using MVVMNavigation.Interfaces;
 
 namespace MVVMNavigation.HistoryStack
 {
-	public class FakeHistoryStack : IStack
+	public class MockHistoryStack : IStack
 	{
 		private readonly Stack<IViewModel> _viewModelsStack = new Stack<IViewModel>();
 
